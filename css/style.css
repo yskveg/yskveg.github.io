@@ -671,7 +671,7 @@ margin-bottom: 0;
 #header{ position: relative; min-height: 150px;  }
 
 /*--- logo ---*/
-.logoHeader{ width: 25px;  margin: -30px auto 75px auto;}
+.logoHeader{ width: 25px;  margin: 26px auto 75px auto;}
 .logoHeader a{ display: block; text-align: center; letter-spacing: 0; color: #eb413e; padding: 40px 15px 0 15px; }
 .logoHeader img{ width: 100%; }
 .logoHeader .logo_bg_size{ display: block; text-decoration: none; height: 0;}
