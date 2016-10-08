@@ -2723,3 +2723,7 @@ ul.social_style_images li a:hover {opacity: 0.5; }
 .mrg-left{
   margin-left: 80px;
 }
+
+.img-width{
+  width: 2% !important;
+}
