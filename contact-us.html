@@ -135,11 +135,11 @@
 															<h5 class="sc_title sc_title_style_3 margin_top_50 margin_bottom_20">Leave a message</h5>
 															<form action="https://formspree.io/yskmart@outlook.com" method="POST" id= "usrform">
                                 <p>
-                                 <input type="text" name="name" placeholder="Your Name">
+                                 <input type="text" name="name" placeholder="Your Name" required="true">
                                  </p>
-                                 <p><input type="email" name="_replyto" placeholder="Your Email"></p>
+                                 <p><input type="email" name="_replyto" required="true" placeholder="Your Email"></p>
                                  <p>
-                                 <textarea name="comment" form="usrform">Message...</textarea></p>
+                                 <textarea name="comment" form="usrform" placeholder="Message..." required="true"></textarea></p>
                                  <p>
                                  <input type="submit" class="sc_button margin_top_5 sc_button_skin_dark sc_button_style_bg sc_button_size_medium flt-left" value="Send">
                                  </p>
