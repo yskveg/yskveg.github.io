@@ -45,19 +45,5 @@ jQuery(document).ready(function() {
             $form.find('.result', '.contact_form_1').addClass('sc_infobox_style_error').fadeIn().delay(3000).fadeOut();
             return;
         };
-        //sending form data to PHP server if fields are not empty
-        var request = $form.serialize();
-        var ajax = jQuery.post( "include/contact-form.php", request )
-            .done(function( data ) {
-                $form.find('.result', '.contact_form_1').removeClass('sc_infobox_style_error');
-                $form.find('.result', '.contact_form_1').removeClass('error_email_mask');
-                $form.find('.result', '.contact_form_1').addClass('sc_infobox_style_success').html("").fadeIn().delay(3000).fadeOut();
-                jQuery($form).find('div.result', '.contact_form_1').attr('disabled', false).append('<p>'+data+'</p>');
-                jQuery('form.contact_1', '.contact_form_1')[0].reset();
-        })
-            .fail(function( data ) {
-                $form.find('.result', '.contact_form_1').addClass('sc_infobox_style_error').html("").fadeIn().delay(3000).fadeOut();
-                jQuery($form).find('div.result', '.contact_form_1').attr('disabled', false).append('<p class="error_item">Mail cannot be sent. You need PHP server to send mail.</p>');
-        })
     });
 });

@@ -133,35 +133,17 @@
 														</div>
 														<div class=" sc_columns_item  sc_columns_item_coun_2 colspan_2 even" >
 															<h5 class="sc_title sc_title_style_3 margin_top_50 margin_bottom_20">Leave a message</h5>
-															<div class="sc_form contact_form_1">
-															    <form class="contact_1" method="post" action="include/contact-form.php">
-																	<div class="sc_columns_3 sc_columns_indent">
-																		<div class="sc_columns_item sc_form_username">
-																			<label class="required" for="contact_form_username">Name</label>
-															                <input type="text" name="name" id="contact_form_username">
-															            </div>
-																		<div class="sc_columns_item sc_form_email">
-																			<label class="required" for="contact_form_email">E-mail</label>
-															                <input type="text" name="email" id="contact_form_email">
-															            </div>
-																		<div class="sc_columns_item sc_form_subj">
-																			<label class="required" for="contact_form_subj">Subject</label>
-															                <input type="text" name="subject" id="contact_form_subj">
-															            </div>
-															        </div>
-																	<div class="sc_form_message">
-																		<label class="required" for="contact_form_message">Your Message</label>
-														                <textarea  id="contact_form_message" class="textAreaSize" name="message"></textarea>
-															        </div>
-																	<div class="sc_form_button">
-																		<div class="sc_button sc_button_style_3 sc_button_skin_dark sc_button_style_bg sc_button_size_medium">
-																			<button type="submit" name="contact_submit" class="contact_form_submit">submit</button>
-																		</div>
-																	</div>
-
-															        <div class="result sc_infobox"></div>
-															    </form>
-															</div> 
+															<form action="https://formspree.io/yskmart@outlook.com" method="POST" id= "usrform">
+                                <p>
+                                 <input type="text" name="name" placeholder="Your Name">
+                                 </p>
+                                 <p><input type="email" name="_replyto" placeholder="Your Email"></p>
+                                 <p>
+                                 <textarea name="comment" form="usrform">Message...</textarea></p>
+                                 <p>
+                                 <input type="submit" class="sc_button margin_top_5 sc_button_skin_dark sc_button_style_bg sc_button_size_medium flt-left" value="Send">
+                                 </p>
+                              </form>
 														</div>
 													</div>
 												</div>
@@ -187,13 +169,10 @@
                     <a class="social_icons img-width" href="#" target="_blank">
                       <img src="images/twitter.png" alt=""  class= "img-width"/>
                     </a>
-                    <a class="social_icons img-width" href="#" target="_blank">
-                      <img src="images/linkedin.png" alt=""  class= "img-width"/>
-                    </a>
         </div>
         <div class="copyright">
 
-          <a href='#'>YskMart</a>
+          <a href='#'>YSK Mart</a>
           &copy; 2016-18 All Rights Reserved | Terms of Use and Privacy Policy.
         </div>
       </footer>

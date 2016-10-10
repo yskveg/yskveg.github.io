@@ -162,11 +162,13 @@ iframe { max-width: 100%; vertical-align: top; }
 input[type="text"],
 input[type="password"],
 input[type="search"],
+input[type="email"],
 textarea{ font-size: 16px; display: block; outline:none; color:#888888; border-width: 1px; border-style: solid; border-color: #ddd;  background-color: #fff; margin: 0px; width: 100%; font-weight: 300;
 -moz-box-sizing: border-box;
 	 box-sizing: border-box; }
 
-input[type="text"],	
+input[type="text"],
+input[type="email"],
 input[type="password"] { padding: 7px 13px;}
 
 textarea{ resize:vertical; padding:15px; font-weight: 300;  }
@@ -174,6 +176,7 @@ textarea.textAreaSize{ max-height: 400px !important;}
 
 
 input[type="text"]:focus,
+input[type="email"]:focus,
 input[type="password"]:focus,
 textarea:focus{ border-color:#8c8c8c;	}
 
@@ -1424,7 +1427,8 @@ aside.widget_socials ul li{ margin: 0; }
          user-select: none;
 }
 .reviewBlock .reviewTab .revWrap .revItem{  }
-.reviewBlock .reviewTab .revWrap .revName{ overflow: hidden; }
+.reviewBlock .reviewTab .revWrap .revNamefemail
+{ overflow: hidden; }
 
 
 .reviewBlock .reviewTab .revWrap .revInfo{ padding: 0 10px 0 0; vertical-align: middle; font-size: 14px; }
@@ -2726,4 +2730,99 @@ ul.social_style_images li a:hover {opacity: 0.5; }
 
 .img-width{
   width: 2% !important;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+$red: #e74c3c;
+
+*, 
+*:before, 
+*:after {
+   @include box-sizing(border-box); 
+}
+
+html, body {
+  background: #f1f1f1;
+  font-family: 'Merriweather', sans-serif;
+  padding: 1em;
+}
+
+h1 {
+   text-align: center;
+   color: #a8a8a8;
+   @include text-shadow(1px 1px 0 rgba(white, 1));
+}
+
+form {
+   max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+  
+  input, textarea {
+     border:0; outline:0;
+     padding: 1em;
+     @include border-radius(8px);
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+     @include box-shadow(0 1px 1px rgba(black, 0.1));
+     resize: none;
+    
+    &:focus {
+       @include box-shadow(0 0px 2px rgba($red, 1)!important);
+    }
+  }
+  
+  #input-submit {
+     color: white; 
+     background: $red;
+     cursor: pointer;
+    
+    &:hover {
+       @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6)); 
+    }
+  }
+  
+  textarea {
+      height: 126px;
+  }
+}
+
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%; 
+}
+
+
+@media (max-width: 480px) {
+  .half {
+     width: 100%; 
+     float: none;
+     margin-bottom: 0; 
+  }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.flt-left{
+  float: left;
 }
