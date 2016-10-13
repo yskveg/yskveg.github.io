@@ -2826,3 +2826,6 @@ form {
 .flt-left{
   float: left;
 }
+.mrg-left{
+  margin-left: 40px;
+}
